@@ -7,6 +7,9 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
+def helper(request):
+    return "helper"
+
 def analyze(request):
     #Get the text
     djtext = request.POST.get('text', 'default')
